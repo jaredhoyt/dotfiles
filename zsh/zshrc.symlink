@@ -51,10 +51,17 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+# gem_home
+[[ ! -a /usr/local/share/gem_home/gem_home.sh ]] || source /usr/local/share/gem_home/gem_home.sh
+[[ ! -a ~/.gem_home_auto.sh ]] || source ~/.gem_home_auto.sh
 
 # import local zsh customizations, if present
 zrcl="$HOME/.zshrc.local"
 
 [[ ! -a $zrcl ]] || source $zrcl
+
+export HOST_IP=$(ipconfig getifaddr en5)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

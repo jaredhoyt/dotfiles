@@ -32,3 +32,12 @@ map Q :qa
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+map <silent> <F2> :NERDTreeToggle<CR>
+map <silent> <F3> :NERDTreeFind<CR>
+
+colorscheme molokai
+
+set number
+
+let g:jsx_ext_required = 0
