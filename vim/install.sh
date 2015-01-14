@@ -9,13 +9,15 @@ get_bundle() {
     cd "$2"
     git pull --rebase
   else
-    git clone "git://github.com/$1/$2.git"
+    git clone "https://github.com/$1/$2.git"
   fi
   )
 }
 
 get_bundle duff vim-bufonly
 get_bundle elzr vim-json
+get_bundle elixir-editors vim-elixir
+get_bundle flazz vim-colorschemes
 get_bundle godlygeek tabular
 get_bundle hashivim vim-terraform
 get_bundle jgdavey tslime.vim
@@ -27,6 +29,7 @@ get_bundle mileszs ack.vim
 get_bundle pangloss vim-javascript
 get_bundle rking ag.vim
 get_bundle rust-lang rust.vim
+get_bundle scrooloose nerdtree
 get_bundle therubymug vim-pyte
 get_bundle tomasr molokai
 get_bundle tpope vim-abolish

@@ -32,3 +32,17 @@ map Q :qa
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local
 endif
+
+map <silent> <F2> :NERDTreeToggle<CR>
+map <silent> <F3> :NERDTreeFind<CR>
+
+colorscheme molokai
+
+set number
+
+let g:jsx_ext_required = 0
+let g:vim_json_syntax_conceal = 0
+
+au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
+au BufRead,BufNewFile mix.lock set filetype=elixir

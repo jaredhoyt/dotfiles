@@ -27,4 +27,6 @@ tmp
 .eslintignore
 .eslintrc
 *terraform.tfstate.backup
-*.terraform
+*terraform
+.gem
+projections.json

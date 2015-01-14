@@ -44,15 +44,6 @@ setup_gitconfig_local () {
 
   mkdir -p ${HOME}/tmp
 
-  if [ ! -f "$HOME/.ssh/id_rsa.pub" ]; then
-    ssh-keygen -t rsa -C "${git_authoremail}"
-    cat $HOME/.ssh/id_rsa.pub
-  fi
-
-  cat $HOME/.ssh/id_rsa.pub | pbcopy
-  echo "Your ssh public key has been copied to your clipboard.\n Add it to github.com (unless it's there already) and press any key to continue"
-  read
-
   if [ ! -f "$HOME/.ssh/config" ]; then
     echo "Writing .ssh/config"
 cat > $HOME/.ssh/config <<SSHCONFIG

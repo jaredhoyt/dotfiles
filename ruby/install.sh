@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-RUBIES_TO_INSTALL=(2.6.5 2.5.5 2.5.7 2.4.3)
+RUBIES_TO_INSTALL=(3.2.0)
 DEFAULT_RUBY_VERSION=${RUBIES_TO_INSTALL[1]}
 
 echo "Installing rubies"
