@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-symlink "$PACKAGES_DIR/zsh/config/.zshrc" "$HOME/.zshrc"

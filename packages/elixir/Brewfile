@@ -1,0 +1,3 @@
+brew "elixir"
+brew "erlang"
+brew "sqlite"

@@ -20,7 +20,6 @@ elif [[ -n "${GITPOD_WORKSPACE_ID}" ]]; then
   # Gitpod packages
   packages=(
     homebrew
-    gitpod
     zsh
   )
 elif [[ $(uname) == "Darwin" ]]; then
@@ -28,12 +27,13 @@ elif [[ $(uname) == "Darwin" ]]; then
   packages=(
     xcode
     homebrew
+    macos
     git
-    nvim
+    elixir
+    node
     ruby
     tmux
-    vim
-    # macos This is failing due to admin access
+    # vim -- one of the vimbundles keeps breaking
   )
 fi
 
