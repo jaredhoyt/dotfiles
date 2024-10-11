@@ -37,7 +37,7 @@ symlink () {
   fi
 
   # This file/directory already exists
-  if [ -e "$dst" ]; then
+  if [[ -e "$dst" ]]; then
     local action
 
     # TODO: I want this to just show the package/dir, not the full path

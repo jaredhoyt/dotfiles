@@ -16,21 +16,23 @@ packages=()
 if [ ! $# -eq 0 ]; then
   # Manually selected packages
   packages=$*
+elif [[ -z "${GITPOD_WORKSPACE_ID}" ]]; then
+  # Gitpod packages
+  packages=(
+    homebrew
+    zsh
+  )
 elif [[ $(uname) -eq "Darwin" ]]; then
   # MacOS packages
   packages=(
     xcode
+    homebrew
     git
     nvim
     ruby
     tmux
     vim
     # macos This is failing due to admin access
-  )
-elif [[ -z "${GITPOD_WORKSPACE_ID}" ]]; then
-  # Gitpod packages
-  packages=(
-    zsh
   )
 fi
 

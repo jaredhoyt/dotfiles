@@ -4,7 +4,7 @@
 typeset -U config_files
 
 IFS=$'\n'
-config_files=($(find -L "$ZDOTDIR" -name "*.zsh"))
+config_files=($(find -L "$ZDOTDIR" -name "*.zsh" | sort))
 unset IFS
 
 # load the path files
