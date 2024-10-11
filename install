@@ -16,13 +16,13 @@ packages=()
 if [ ! $# -eq 0 ]; then
   # Manually selected packages
   packages=$*
-elif [[ -z "${GITPOD_WORKSPACE_ID}" ]]; then
+elif [[ -n "${GITPOD_WORKSPACE_ID}" ]]; then
   # Gitpod packages
   packages=(
     homebrew
     zsh
   )
-elif [[ $(uname) -eq "Darwin" ]]; then
+elif [[ $(uname) == "Darwin" ]]; then
   # MacOS packages
   packages=(
     xcode
