@@ -28,6 +28,7 @@ elif [[ $(uname) == "Darwin" ]]; then
     xcode
     homebrew
     macos
+    mutagen
     git
     elixir
     node

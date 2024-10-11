@@ -1,0 +1,10 @@
+sync:
+  defaults:
+    mode: "two-way-resolved"
+    ignore:
+      paths:
+        - "_build/"
+        - "*.un~"
+        - ".DS_Store"
+        - "priv/static/assets"
+        - "assets/node_modules"

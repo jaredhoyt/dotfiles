@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 unset GEM_HOME_AUTO
 
 if [ -z "$GEM_HOME_FILENAME" ]; then

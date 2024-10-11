@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 alias be='bundle exec'
 alias heroku='noglob heroku'
 alias rspec='nocorrect rspec'

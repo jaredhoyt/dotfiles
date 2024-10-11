@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 alias reload!="source $ZDOTDIR/.zshrc"
 
 alias ..='cd ..'

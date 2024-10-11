@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-export TERM="screen-256color"
 export DOTHOME=$HOME/dotfiles
 export WORKSPACE=$HOME/src
 
@@ -11,13 +10,6 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 # Zsh configuration
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-# export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
+export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
 export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
-
-# Default text editor
-export EDITOR="nvim"
-export VISUAL="nvim"
-
-# This is for rust and probably belongs with that config
-export PATH="$HOME/.cargo/bin:$PATH"

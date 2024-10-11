@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # ~/aliases.zsh
 # vim:set ft=sh sw=2 sts=2:
 

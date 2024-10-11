@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # autoload -U $DOTHOME/functions/*(:t)
 
