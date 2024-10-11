@@ -20,6 +20,7 @@ elif [[ -n "${GITPOD_WORKSPACE_ID}" ]]; then
   # Gitpod packages
   packages=(
     homebrew
+    gitpod
     zsh
   )
 elif [[ $(uname) == "Darwin" ]]; then
