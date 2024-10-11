@@ -11,10 +11,3 @@ alias md='mkdir -p'
 alias mkdir='nocorrect mkdir'
 alias mv='nocorrect mv'       # no spelling correction on mv
 alias rd='rmdir'
-
-# Move these elsewhere
-alias heroku='noglob heroku'
-alias be='bundle exec'
-alias rspec='nocorrect rspec'
-alias spec='nocorrect spec'
-alias spec='spec -c'
