@@ -24,7 +24,13 @@ elif [[ $(uname) -eq "Darwin" ]]; then
     nvim
     ruby
     tmux
+    vim
     # macos This is failing due to admin access
+  )
+elif [[ -z "${GITPOD_WORKSPACE_ID}" ]]; then
+  # Gitpod packages
+  packages=(
+    zsh
   )
 fi
 
