@@ -8,6 +8,7 @@ set -o errexit
 set -o pipefail
 
 . "$HELPERS_DIR/brew.sh"
+. "$HELPERS_DIR/flags.sh"
 . "$HELPERS_DIR/output.sh"
 . "$HELPERS_DIR/package.sh"
 . "$HELPERS_DIR/symlink.sh"
