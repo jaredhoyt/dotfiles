@@ -1,0 +1,14 @@
+# Editor files
+*.un~
+*.pem
+*.swp
+
+# Install files
+Brewfile.lock.json
+packages/zsh/config/plugins
+
+# Config files
+lazy-lock.json
+.zcompdump
+.zhistory
+.zsh_history

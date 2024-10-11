@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+if hash brew &>/dev/null; then
+  success "Homebrew already installed"
+else
+  info "Installing homebrew..."
+  sudo --validate # reset `sudo` timeout to use Homebrew install in noninteractive mode
+  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
+
+# TODO: Why are their docs wrong? Why can't I just set this to ~/.Brewfile??
+brew bundle --file="$XDG_CONFIG_HOME/homebrew/Brewfile"

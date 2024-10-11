@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+readonly ROOT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+readonly HELPERS_DIR="$ROOT_DIR/helpers"
+readonly PACKAGES_DIR="$ROOT_DIR/packages"
+
+set -o errexit
+set -o pipefail
+
+. "$HELPERS_DIR/output.sh"
+. "$HELPERS_DIR/package.sh"
+. "$HELPERS_DIR/symlink.sh"
+
+packages=()
+if [ ! $# -eq 0 ]; then
+  # Manually selected packages
+  packages=$*
+elif [[ $(uname) -eq "Darwin" ]]; then
+  # MacOS packages
+  packages=(
+    xcode
+    homebrew
+    git
+    nvim
+    tmux
+    # macos This is failing due to admin access
+  )
+fi
+
+install_packages "${packages[@]}"
