@@ -7,6 +7,7 @@ readonly PACKAGES_DIR="$ROOT_DIR/packages"
 set -o errexit
 set -o pipefail
 
+. "$HELPERS_DIR/brew.sh"
 . "$HELPERS_DIR/output.sh"
 . "$HELPERS_DIR/package.sh"
 . "$HELPERS_DIR/symlink.sh"
@@ -19,9 +20,9 @@ elif [[ $(uname) -eq "Darwin" ]]; then
   # MacOS packages
   packages=(
     xcode
-    homebrew
     git
     nvim
+    ruby
     tmux
     # macos This is failing due to admin access
   )

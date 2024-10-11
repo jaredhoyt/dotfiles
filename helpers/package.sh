@@ -10,6 +10,20 @@ install_package() {
     exit 1
   fi
 
+  announce "Installing $name..."
+
+  # Install dependencies
+  #
+  # Bundles a package if a `Brewfile` is found in the package root.
+  #
+  # For example:
+  #
+  #   packages/acme/Brewfile
+  #
+  if [ -f "$package/Brewfile" ]; then
+    brew::bundle "$package/Brewfile"
+  fi
+
   # Setup dot-files
   #
   # Creates a symlink for any file prefixed with `dot-` found in the
@@ -57,7 +71,7 @@ install_package() {
     . "$package/install"
   fi
 
-  success "Installed package: $name"
+  success "Installed package: $name"; echo
 }
 
 install_packages() {

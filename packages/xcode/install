@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-if xcode-select -p >/dev/null; then
-  success "Xcode Command Line Tools already installed"
-else
-  info "Installing Xcode Command Line Tools..."
-
+if ! xcode-select -p >/dev/null; then
   xcode-select --install
   sudo xcodebuild -license accept
 fi

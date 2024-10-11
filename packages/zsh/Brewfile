@@ -1,0 +1,7 @@
+brew "antidote"
+brew "fd"
+brew "fzf"
+brew "tree"
+brew "powerlevel10k"
+brew "wget"
+brew "zsh"

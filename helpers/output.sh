@@ -1,5 +1,9 @@
 reset_color=$(tput sgr0)
 
+announce() {
+  printf "%s[+] %s%s\n" "$(tput setaf 3)" "$1" "$reset_color"
+}
+
 info() {
   printf "%s[*] %s%s\n" "$(tput setaf 4)" "$1" "$reset_color"
 }

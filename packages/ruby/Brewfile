@@ -1,0 +1,4 @@
+brew "chruby"
+brew "ruby-install"
+brew "the_silver_searcher"
+brew "wget"

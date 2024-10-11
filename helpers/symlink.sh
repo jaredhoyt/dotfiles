@@ -18,7 +18,7 @@ symlink::zsh() {
     install_package "zsh"
   fi
 
-  symlink $1 "$ZDOTDIR/plugins/$2"
+  symlink $1 "$ZDOTDIR/plugins/_$2"
 
   # Reload the shell at the end
   #

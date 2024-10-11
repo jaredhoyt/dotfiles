@@ -5,7 +5,7 @@
 
 # Install files
 Brewfile.lock.json
-packages/zsh/config/plugins
+packages/zsh/config/plugins/_*
 
 # Config files
 lazy-lock.json
