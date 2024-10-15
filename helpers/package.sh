@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-install_package() {
+package::install() {
   local name="$1"
   local package="$PACKAGES_DIR/$name"
 
@@ -80,7 +80,7 @@ install_packages() {
 
   # Install selected packages
   for name in $*; do
-    install_package "$name"
+    package::install "$name"
   done
 
   # Reload shell if config changed

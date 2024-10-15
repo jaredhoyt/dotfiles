@@ -15,7 +15,7 @@ symlink::config() {
 symlink::zsh() {
   # Ensure zsh is setup already
   if [ ! -L "$HOME/.zshenv" ] ||  [ ! -d "$ZDOTDIR" ]; then
-    install_package "zsh"
+    package::install "zsh"
   fi
 
   symlink $1 "$ZDOTDIR/plugins/_$2"

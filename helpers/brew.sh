@@ -8,7 +8,7 @@ brew::bundle() {
   fi
 
   if [[ ! $(which brew) ]]; then
-    install_package "homebrew"
+    package::install "homebrew"
   fi
 
   info "Bundling $brewfile..."

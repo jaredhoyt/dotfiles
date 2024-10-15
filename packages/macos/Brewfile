@@ -1,6 +1,7 @@
 cask "1password-cli"
 cask "wezterm"
 
+brew "cmake"
 brew "exercism"
 brew "fd"
 brew "flyctl"
