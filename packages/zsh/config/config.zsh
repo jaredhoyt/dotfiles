@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
 
-# autoload -U $DOTHOME/functions/*(:t)
-
-# source "$DOTHOME/system/shellrc.symlink"
-
 # color term
 export CLICOLOR=1
 export LSCOLORS=Dxfxcxdxbxegedabadacad
@@ -20,21 +16,24 @@ PROMPT='%{$fg_bold[green]%}%n@%m%{$reset_color%}:%{$fg_bold[cyan]%}%~%{$reset_co
 # show non-success exit code in right prompt
 RPROMPT="%(?..{%{$fg[red]%}%?%{$reset_color%}})"
 
+setopt APPEND_HISTORY # adds history
+setopt COMPLETE_IN_WORD
+setopt CORRECT
+setopt EXTENDED_HISTORY # add timestamps to history
+setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
+setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
+setopt LOCAL_OPTIONS # allow functions to have local options
+setopt LOCAL_TRAPS # allow functions to have local traps
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
 setopt NO_LIST_BEEP
-setopt LOCAL_OPTIONS # allow functions to have local options
-setopt LOCAL_TRAPS # allow functions to have local traps
-setopt HIST_VERIFY
-setopt SHARE_HISTORY # share history between sessions ???
-setopt EXTENDED_HISTORY # add timestamps to history
 setopt PROMPT_SUBST
-setopt CORRECT
-setopt COMPLETE_IN_WORD
-setopt APPEND_HISTORY # adds history
-setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
-setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
-setopt HIST_REDUCE_BLANKS
+setopt SHARE_HISTORY # share history between sessions ???
+
+# I want to use [ and ] damn it!
+unsetopt nomatch
 
 # Bindings
 
@@ -57,3 +56,8 @@ bindkey '^x^e' edit-command-line
 bindkey '\ep' up-line-or-search
 bindkey '\en' down-line-or-search
 bindkey '\ew' kill-region
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# set cd autocompletion to commonly visited directories
+cdpath=(. ~ ~/src $WORKSPACE)
