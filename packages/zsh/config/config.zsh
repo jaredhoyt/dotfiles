@@ -10,11 +10,7 @@ export LESS=FRX
 # make with the pretty colors
 autoload colors; colors
 
-# prompt
-PROMPT='%{$fg_bold[green]%}%n@%m%{$reset_color%}:%{$fg_bold[cyan]%}%~%{$reset_color%}%# '
-
-# show non-success exit code in right prompt
-RPROMPT="%(?..{%{$fg[red]%}%?%{$reset_color%}})"
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 setopt APPEND_HISTORY # adds history
 setopt COMPLETE_IN_WORD
