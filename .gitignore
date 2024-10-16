@@ -5,6 +5,7 @@
 
 # Install files
 Brewfile.lock.json
+packages/tmux/config/plugins
 packages/zsh/config/plugins/_*
 
 # Config files

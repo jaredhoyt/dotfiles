@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Install package manager
+if [[ ! -d "$package/config/plugins/tpm" ]]; then
+  git clone "https://github.com/tmux-plugins/tpm" "$package/config/plugins/tpm"
+fi
+
+# Powerline customization goes in ~/.config/tmux-powerline
+symlink::config "$package/powerline" "tmux-powerline"
