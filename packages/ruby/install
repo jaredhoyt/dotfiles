@@ -4,13 +4,5 @@
 #
 # See https://github.com/postmodern/gem_home
 #
-# install_gem_home() {
-#   local path="$WORKSPACE/gem_home-0.1.0.tar.gz"
-#   wget -O $path https://github.com/postmodern/gem_home/archive/v0.1.0.tar.gz
-#   tar -xzvf 
-#   cd gem_home-0.1.0/
-#   sudo make install
-# }
-
-# TODO: make this install in the $WORKSPACE dir
-# install_gem_home
+curl https://github.com/postmodern/gem_home/blob/master/homebrew/gem_home.rb
+brew install --HEAD -s gem_home.rb

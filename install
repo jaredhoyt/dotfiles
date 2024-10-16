@@ -31,10 +31,8 @@ elif [[ $(uname) == "Darwin" ]]; then
     mutagen
     git
     elixir
-    node
     ruby
     tmux
-    # vim -- one of the vimbundles keeps breaking
   )
 fi
 
