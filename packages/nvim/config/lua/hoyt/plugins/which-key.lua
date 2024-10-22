@@ -2,6 +2,11 @@ return {
   'folke/which-key.nvim',
   event = 'VimEnter',
   opts = {
+    preset = "modern",
+    delay = function(ctx)
+      return ctx.plugin and 0 or 750
+    end,
+
     -- Document existing key chains
     spec = {
       { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },

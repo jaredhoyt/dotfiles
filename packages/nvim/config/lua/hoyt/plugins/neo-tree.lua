@@ -11,11 +11,25 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '<leader>e', ':Neotree toggle<CR>', desc = 'NeoTree toggle', silent = true },
-    { '<leader>E', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { ',e', ':Neotree float toggle<CR>', desc = 'NeoTree toggle', silent = true },
+    { ',.', ':Neotree float reveal reveal_force_cwd<CR>', desc = 'NeoTree reveal', silent = true },
+    { ',b', ':Neotree toggle show buffers right<CR>', desc = 'NeoTree buffers' },
+    { ',g', ':Neotree float git_status<CR>', desc = 'NeoTree git status' },
   },
   opts = {
     filesystem = {
+      hijack_netrw_behavior = "disabled",
+      filtered_items = {
+        hide_gitignored = false,
+        never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
+          ".DS_Store",
+          --"thumbs.db"
+        },
+        never_show_by_pattern = { -- uses glob style patterns
+          "*.un~",
+          "*.swp",
+        },
+      },
       window = {
         mappings = {
           -- These are mostly just old NerdTree settings

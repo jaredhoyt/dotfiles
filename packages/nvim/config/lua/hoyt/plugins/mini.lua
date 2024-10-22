@@ -9,6 +9,15 @@ return { -- Collection of various small independent plugins/modules
     --  - ci'  - [C]hange [I]nside [']quote
     require('mini.ai').setup { n_lines = 500 }
 
+    -- Go forward/backward with square brackets
+    --
+    -- Examples:
+    --  - [F  - Go to first file
+    --  - [f  - Go backward one file
+    --  - ]f  - Go forward one file
+    --  - ]F  - Go to last file
+    require('mini.bracketed').setup()
+
     -- Add/delete/replace surroundings (brackets, quotes, etc.)
     --
     -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren

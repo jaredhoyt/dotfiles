@@ -22,8 +22,6 @@ keymap('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Buffer navigation
 keymap('n', '<S-l>', '<cmd>bnext<CR>', {})
 keymap('n', '<S-h>', '<cmd>bprevious<CR>', {})
-keymap('n', '<S-n>', ':bn<CR>')
-keymap('n', '<S-p>', ':bp<CR>')
 
 -- Window navigation
 keymap('n', '<C-h>', '<C-w>h')
@@ -41,7 +39,7 @@ keymap('n', '<C-Right>', ':vertical resize +2<CR>', {})
 -- [[ Interactive mode ]] -- 
 
 -- Press jk to exit insert mode (Experimental)
-keymap('i', 'jk', '<ESC>')
+-- keymap('i', 'jk', '<ESC>')
 
 
 -- [[ Visual mode ]] -- 
