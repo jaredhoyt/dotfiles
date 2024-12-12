@@ -27,6 +27,7 @@ config.font_locator = 'ConfigDirsOnly'
 config.font_size = 15
 config.font = wezterm.font_with_fallback({
   { family = "JetBrainsMonoNL Nerd Font Mono", weight = "DemiBold" },
+  { family = "MesloLGS NF", weight = "Bold" },
   { family = "Symbols Nerd Font Mono" }
 })
 
