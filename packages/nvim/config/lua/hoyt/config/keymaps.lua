@@ -1,6 +1,6 @@
 -- Set leader to Space
 vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.maplocalleader = ','
 
 -- Modes
 --  normal_mode = 'n'

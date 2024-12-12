@@ -8,6 +8,9 @@ Brewfile.lock.json
 packages/tmux/config/plugins
 packages/zsh/config/plugins/_*
 
+# Package files
+packages/nvim/config/journal
+
 # Config files
 lazy-lock.json
 .zcompdump

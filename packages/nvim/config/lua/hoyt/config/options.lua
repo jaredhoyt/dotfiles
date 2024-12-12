@@ -18,11 +18,11 @@ local options = {
 
   -- Interface
   cmdheight = 1,                           -- more space in the neovim command line for displaying messages
-  conceallevel = 0,                        -- so that `` is visible in markdown files
+  conceallevel = 2,                        -- so that `` is visible in markdown files
   cursorline = true,                       -- highlight the current line
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   linebreak = true,                        -- companion to wrap, don't split words
-  -- mouse = "a",                             -- allow the mouse to be used in neovim
+  mouse = '',                             -- allow the mouse to be used in neovim
   number = true,                           -- set numbered lines
   numberwidth = 2,                         -- set number column width to 2 {default 4}
   pumheight = 10,                          -- pop up menu height

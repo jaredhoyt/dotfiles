@@ -6,7 +6,7 @@ return { -- Highlight, edit, and navigate code
   opts = {
     ensure_installed = {
       'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc',
-      'elixir', 'ruby', 'go', 'rust', 'typescript'
+      'ruby', 'go', 'rust', 'typescript', 'elixir', 'heex', 'eex'
     },
     -- Autoinstall languages that are not installed
     auto_install = true,

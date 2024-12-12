@@ -77,6 +77,7 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
      # "tool_versions ${background} ${green}" \
      # "gitstatus ${background} ${cyan}" \
      # "load ${gray} ${green}"\
+     # "now_playing ${background} ${white}" \
      "date ${dark_gray} ${orange}" \
      "time ${background} ${cyan}" \
      "platform 0 ${red}" \

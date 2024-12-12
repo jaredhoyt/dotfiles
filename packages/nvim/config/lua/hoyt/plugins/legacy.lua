@@ -11,6 +11,9 @@ return { -- legacy plugins from my old vim configuration
     }
   },
 
+  -- case coercions
+  { "tpope/vim-abolish" },
+
   -- git blame
   { "tpope/vim-fugitive" },
 
@@ -20,7 +23,7 @@ return { -- legacy plugins from my old vim configuration
   -- default rails projections
   { "tpope/vim-rails" },
 
-  -- emacs binding
+  -- emacs bindings
   { "tpope/vim-rsi" },
 
   {

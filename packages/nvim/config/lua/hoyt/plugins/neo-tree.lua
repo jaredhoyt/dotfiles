@@ -11,10 +11,10 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { ',e', ':Neotree float toggle<CR>', desc = 'NeoTree toggle', silent = true },
-    { ',.', ':Neotree float reveal reveal_force_cwd<CR>', desc = 'NeoTree reveal', silent = true },
-    { ',b', ':Neotree toggle show buffers right<CR>', desc = 'NeoTree buffers' },
-    { ',g', ':Neotree float git_status<CR>', desc = 'NeoTree git status' },
+    { '<leader>e', ':Neotree float toggle<CR>', desc = 'NeoTree toggle', silent = true },
+    { '<leader>.', ':Neotree float reveal reveal_force_cwd<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<leader>b', ':Neotree toggle show buffers right<CR>', desc = 'NeoTree buffers' },
+    { '<leader>g', ':Neotree float git_status<CR>', desc = 'NeoTree git status' },
   },
   opts = {
     filesystem = {
@@ -36,7 +36,13 @@ return {
           -- (muscle memory is a hellofa drug)
           ['x'] = 'close_node',
           ['u'] = 'navigate_up',
-          ['C'] = 'set_root'
+          ['C'] = 'set_root',
+          ['m'] = {
+            "move",
+            config = {
+              show_path = "relative"
+            },
+          }
         },
       },
     },
