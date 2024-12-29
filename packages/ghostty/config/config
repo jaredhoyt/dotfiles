@@ -1,0 +1,16 @@
+# Reference
+#
+# ghostty +list-fonts
+# ghostty +list-themes
+# ghostty +show-config --default --docs
+
+# Fonts
+font-family = JetBrainsMonoNL Nerd Font Mono
+font-family = MesloLGS NF
+font-family = Symbols Nerd Font Mono
+font-style = SemiBold
+
+# Presentation
+theme = ayu
+window-padding-x = 0
+window-padding-y = 0
