@@ -3,6 +3,7 @@
 readonly ROOT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 readonly HELPERS_DIR="$ROOT_DIR/helpers"
 readonly PACKAGES_DIR="$ROOT_DIR/packages"
+readonly TMP_DIR="$ROOT_DIR/.tmp"
 
 set -o errexit
 set -o pipefail

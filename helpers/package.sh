@@ -3,6 +3,7 @@
 package::install() {
   local name="$1"
   local package="$PACKAGES_DIR/$name"
+  local tmp="$TMP_DIR/$name"
 
   # Verify package exists
   if [ ! -d "$package" ]; then

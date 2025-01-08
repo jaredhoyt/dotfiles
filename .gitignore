@@ -4,6 +4,7 @@
 *.swp
 
 # Install files
+.tmp/
 Brewfile.lock.json
 packages/tmux/config/plugins
 packages/zsh/config/plugins/_*

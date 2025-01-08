@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-# Install gem_home manually
-#
-# See https://github.com/postmodern/gem_home
-#
-curl https://github.com/postmodern/gem_home/blob/master/homebrew/gem_home.rb
-brew install --HEAD -s gem_home.rb
