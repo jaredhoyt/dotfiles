@@ -1,13 +1,8 @@
 cask "1password-cli"
-cask "wezterm"
 
 brew "cmake"
 brew "exercism"
 brew "fd"
 brew "flyctl"
-brew "go"
-brew "openssl"
-brew "python@3.12"
 brew "tldr"
-brew "tmux"
 brew "wget"

@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-# Xcode is a prerequisite
-package::install "xcode"
+# Ensure we have xcode tools for mac
+if ! xcode-select -p >/dev/null; then
+  xcode-select --install
+  sudo xcodebuild -license accept
+fi
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 

@@ -8,9 +8,11 @@
 font-family = JetBrainsMonoNL Nerd Font Mono
 font-family = MesloLGS NF
 font-family = Symbols Nerd Font Mono
+font-size = 15
 font-style = SemiBold
 
 # Presentation
 theme = ayu
+window-decoration = false
 window-padding-x = 0
 window-padding-y = 0

@@ -26,13 +26,14 @@ elif [[ -n "${GITPOD_WORKSPACE_ID}" ]]; then
 elif [[ $(uname) == "Darwin" ]]; then
   # MacOS packages
   packages=(
-    homebrew
+    elixir
+    git
     macos
     mutagen
-    git
-    elixir
+    nvim
     ruby
     tmux
+    wezterm
   )
 fi
 

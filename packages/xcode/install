@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# Ensure we have xcode tools for mac
-if ! xcode-select -p >/dev/null; then
-  xcode-select --install
-  sudo xcodebuild -license accept
-fi
