@@ -25,19 +25,6 @@ package::install() {
     brew::bundle "$package/Brewfile"
   fi
 
-  # Setup dot-files
-  #
-  # Creates a symlink for any file prefixed with `dot-` found in the
-  # package root and the user's home directory.
-  #
-  # For example:
-  #
-  #   packages/acme/dot-acmerc => ~/.acmerc
-  #
-  for dotfile in $(find "$package" -maxdepth 1 -name 'dot-*'); do
-    symlink "$dotfile" "$HOME/.${dotfile#*dot-}"
-  done
-
   # Setup XDG config(s)
   #
   # Creates a symlink between the `config` directory in the package root
@@ -50,6 +37,19 @@ package::install() {
   if [ -d "$package/config" ]; then
     symlink::config "$package/config" $name
   fi
+
+  # Setup dot-files
+  #
+  # Creates a symlink for any file prefixed with `dot-` found in the
+  # package root and the user's home directory.
+  #
+  # For example:
+  #
+  #   packages/acme/dot-acmerc => ~/.acmerc
+  #
+  for dotfile in $(find "$package" -maxdepth 1 -name 'dot-*'); do
+    symlink "$dotfile" "$HOME/.${dotfile#*dot-}"
+  done
 
   # Setup zsh plugin
   #
