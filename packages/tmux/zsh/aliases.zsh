@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-muxable_paths=(${SOURCE_DIR}/gs)
-
 mux() {
   local name cols
   if [ -n "$1" ]; then
