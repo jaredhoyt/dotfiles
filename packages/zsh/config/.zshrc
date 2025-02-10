@@ -8,6 +8,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 source "$ZDOTDIR/aliases.zsh"
+source "$ZDOTDIR/brew.zsh"
 source "$ZDOTDIR/completion.zsh"
 source "$ZDOTDIR/config.zsh"
 source "$ZDOTDIR/fpath.zsh"

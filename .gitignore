@@ -11,6 +11,7 @@ packages/zsh/config/plugins/_*
 
 # Package files
 packages/nvim/config/journal
+packages/zsh/config/.zsh_sessions
 
 # Config files
 lazy-lock.json
