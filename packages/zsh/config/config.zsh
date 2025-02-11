@@ -53,7 +53,9 @@ bindkey '\ep' up-line-or-search
 bindkey '\en' down-line-or-search
 bindkey '\ew' kill-region
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if command -v fzf 2>&1 >/dev/null; then
+  source <(fzf --zsh)
+fi
 
 # set cd autocompletion to commonly visited directories
 cdpath=(. ~ ~/src $WORKSPACE)
