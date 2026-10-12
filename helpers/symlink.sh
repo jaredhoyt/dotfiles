@@ -12,6 +12,18 @@ symlink::config() {
   symlink $1 "$XDG_CONFIG_HOME/$2"
 }
 
+symlink::bin() {
+  local bin=$1
+  local executable
+
+  mkdir -p "$HOME/.local/bin"
+
+  for executable in "$bin"/*; do
+    [ -f "$executable" ] && [ -x "$executable" ] || continue
+    symlink "$executable" "$HOME/.local/bin/${executable##*/}"
+  done
+}
+
 symlink::zsh() {
   # Ensure zsh is setup already
   if [ ! -L "$HOME/.zshenv" ] ||  [ ! -d "$ZDOTDIR" ]; then

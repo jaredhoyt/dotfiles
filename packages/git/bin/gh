@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+gh="$(brew --prefix gh)/bin/gh"
+
+if command -v op >/dev/null; then
+  exec op run -- "$gh" "$@"
+fi
+
+exec "$gh" "$@"

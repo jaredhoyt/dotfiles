@@ -51,6 +51,19 @@ package::install() {
     symlink "$dotfile" "$HOME/.${dotfile#*dot-}"
   done
 
+  # Setup executables
+  #
+  # Creates symlinks for executable files in the package's `bin` directory
+  # under the user's local bin directory.
+  #
+  # For example:
+  #
+  #   packages/acme/bin/example => ~/.local/bin/example
+  #
+  if [ -d "$package/bin" ]; then
+    symlink::bin "$package/bin"
+  fi
+
   # Setup zsh plugin
   #
   # Creates a symlink between the `zsh` directory in the package root

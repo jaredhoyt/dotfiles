@@ -13,3 +13,7 @@ else
 fi
 
 eval $(${HOMEBREW_PREFIX}/bin/brew shellenv)
+
+# Homebrew prepends its directories, so restore package executables first.
+typeset -U path
+path=("$HOME/.local/bin" $path)
