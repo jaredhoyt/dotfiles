@@ -29,5 +29,7 @@ tmp
 *terraform.tfstate.backup
 *terraform
 .gem
-projections.json
+.projections.json
 observer
+.claude
+.pi
