@@ -94,6 +94,15 @@ touch packages/acme/dot-file       # symlinked to ~/.file
 mkdir packages/acme/dot-directory  # symlinked to ~/.directory
 ```
 
+#### executables
+
+To add a command available on your `PATH`, create an executable file in the package's `bin` directory. It will be symlinked to `~/.local/bin` when the package is installed:
+
+```bash
+mkdir packages/acme/bin
+chmod +x packages/acme/bin/example # symlinked to ~/.local/bin/example
+```
+
 #### shell extensions
 
 > [!IMPORTANT]
