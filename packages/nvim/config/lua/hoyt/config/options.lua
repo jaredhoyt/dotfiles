@@ -18,7 +18,7 @@ local options = {
 
   -- Interface
   cmdheight = 1,                           -- more space in the neovim command line for displaying messages
-  conceallevel = 2,                        -- so that `` is visible in markdown files
+  conceallevel = 1,                        -- so that `` is visible in markdown files
   cursorline = true,                       -- highlight the current line
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   linebreak = true,                        -- companion to wrap, don't split words

@@ -11,8 +11,8 @@ return {
     --   vim.cmd([[colorscheme catppuccin]])
     -- end,
   },
-	{
-		"rebelot/kanagawa.nvim",
+  {
+    "rebelot/kanagawa.nvim",
     lazy = false,
     -- priority = 1000,
     -- config = function()
@@ -52,4 +52,14 @@ return {
       vim.cmd([[colorscheme onedark]])
     end
   },
+  -- {
+  --   "mitander/flume.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  --   config = function(_, opts)
+  --     require("flume").setup(opts)
+  --     vim.cmd.colorscheme("flume")
+  --   end,
+  -- },
 }
