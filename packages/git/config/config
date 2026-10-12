@@ -60,3 +60,7 @@
   gpgsign = true
 [init]
   defaultBranch = main
+# Optional machine- or environment-specific settings. Package installers may
+# copy this file into place; Git silently skips the include when it is absent.
+[include]
+  path = ~/.gitconfig-local
