@@ -1,6 +1,8 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
+config.audible_bell = "Disabled"
+
 -- config.color_scheme = 'Banana Blueberry'
 -- config.color_scheme = 'Blue Matrix'
 -- config.color_scheme = 'Bright Lights'
@@ -15,6 +17,7 @@ config.colors = {
 }
 
 config.enable_tab_bar = false
+config.enable_kitty_keyboard = true
 
 config.default_cursor_style = "BlinkingBlock"
 config.cursor_blink_ease_in = 'Constant'
@@ -22,7 +25,6 @@ config.cursor_blink_ease_out = 'Constant'
 config.cursor_blink_rate = 500
 
 config.font_dirs = { 'fonts' }
-config.font_locator = 'ConfigDirsOnly'
 
 config.font_size = 15
 config.font = wezterm.font_with_fallback({
