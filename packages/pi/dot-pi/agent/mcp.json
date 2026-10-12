@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "calendarmcp": {
+      "url": "https://calendarmcp.googleapis.com/mcp/v1"
+    },
+    "docsmcp": {
+      "url": "https://docsmcp.googleapis.com/mcp/v1"
+    },
+    "people": {
+      "url": "https://people.googleapis.com/mcp/v1"
+    },
+    "slidesmcp": {
+      "url": "https://slidesmcp.googleapis.com/mcp/v1"
+    },
+    "chatmcp": {
+      "url": "https://chatmcp.googleapis.com/mcp/v1"
+    },
+    "gmailmcp": {
+      "url": "https://gmailmcp.googleapis.com/mcp/v1"
+    },
+    "sheetsmcp": {
+      "url": "https://sheetsmcp.googleapis.com/mcp/v1"
+    },
+    "drivemcp": {
+      "url": "https://drivemcp.googleapis.com/mcp/v1"
+    }
+  }
+}

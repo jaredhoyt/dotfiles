@@ -1,0 +1,24 @@
+# Credentials and authentication state
+dot-pi/agent/auth.json
+dot-pi/agent/mcp-auth.json
+
+# Machine- and project-specific state
+dot-pi/agent/trust.json
+dot-pi/agent/mcp-project-approvals.json
+
+# Generated caches, onboarding state, and logs
+dot-pi/agent/mcp-cache.json
+dot-pi/agent/mcp-onboarding.json
+dot-pi/agent/models-store.json
+dot-pi/agent/mcp.log*
+dot-pi/agent/pi-subagents/last-seen-version.json
+
+# Session history and package installation artifacts
+dot-pi/agent/sessions/
+dot-pi/agent/run-history.jsonl
+dot-pi/agent/missions/
+dot-pi/agent/npm/
+
+# Context-mode databases and web-search cache
+dot-pi/context-mode/
+config/web-search-cache/
