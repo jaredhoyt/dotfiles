@@ -13,7 +13,7 @@ return {
   keys = {
     { '<leader>e', ':Neotree float toggle<CR>', desc = 'NeoTree toggle', silent = true },
     { '<leader>.', ':Neotree float reveal reveal_force_cwd<CR>', desc = 'NeoTree reveal', silent = true },
-    { '<leader>b', ':Neotree toggle show buffers right<CR>', desc = 'NeoTree buffers' },
+    { '<leader>b', ':Neotree toggle focus buffers float<CR>', desc = 'NeoTree buffers' },
     { '<leader>g', ':Neotree float git_status<CR>', desc = 'NeoTree git status' },
   },
   opts = {
